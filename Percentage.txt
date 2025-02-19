@@ -1,0 +1,9 @@
+SELECT 
+    Reference, 
+    COUNT(Reference) AS Reference_Count, 
+    printf('%.2f', (COUNT(Reference) * 100.0 / SUM(COUNT(Reference)) OVER ())) AS Percentage
+FROM Lab_Usage
+GROUP BY Reference
+ORDER BY Reference_Count DESC;
+
+/*คำนวน % โดยการ Fix ให้ได้ทศนิยม 2 ตำแหน่งตลอด*/
