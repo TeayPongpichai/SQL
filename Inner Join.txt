@@ -1,0 +1,5 @@
+select invoices.InvoiceId,customers.FirstName,customers.LastName
+from invoices
+inner JOIN customers
+on invoices.CustomerId = customers.CustomerId
+order by InvoiceId DESC;
