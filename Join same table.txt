@@ -1,0 +1,5 @@
+/*join same table*/
+select employees2.FirstName,employees2.LastName,employees2.Title,employees.FirstName,employees.LastName,employees.Title
+from employees
+INNER join employees As employees2
+on employees.EmployeeId = employees2.ReportsTo
