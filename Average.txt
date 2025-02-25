@@ -1,0 +1,3 @@
+select *,(max_salary+min_salary)/2 As avg_salary from job
+order by avg_salary desc
+limit 5;
