@@ -1,0 +1,9 @@
+SELECT InvoiceId,total,
+case
+when total >= 10 then "AAA"
+when total < 10 and total > 5 then "AA"
+when total <= 5 then "A"
+ELSE "None"
+END as result
+from invoices
+limit 5
