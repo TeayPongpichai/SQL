@@ -1,0 +1,2 @@
+select * from Stock
+where Fullname Not like '%CORP%';
