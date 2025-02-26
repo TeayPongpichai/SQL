@@ -1,0 +1,2 @@
+select * from Stock
+where price between 100 and 300; 
