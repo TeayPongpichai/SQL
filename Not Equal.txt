@@ -1,0 +1,2 @@
+select * from Stock
+where Id <> 7;
