@@ -1,0 +1,1 @@
+select Count (Distinct Sector) as NumberOfSectors from Stock;
