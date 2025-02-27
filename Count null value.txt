@@ -1,0 +1,1 @@
+select count(*) - count(EPS) as MissingEPS from Stock;
