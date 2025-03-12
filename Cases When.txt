@@ -1,0 +1,7 @@
+select *,
+case when EPS is null then null
+when eps < 5 then 'low'
+when eps >= 5 and eps < 10 then 'medium'
+else 'high'
+end as EPSLevel
+from Stock;
