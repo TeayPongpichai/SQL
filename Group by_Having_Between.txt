@@ -1,0 +1,4 @@
+select job_id , avg(salary) as avg_salary from employee
+group by job_id
+having avg(salary) between 10000 and 20000
+order by avg_salary Desc;
