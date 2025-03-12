@@ -1,0 +1,4 @@
+select *,case when Sector like '%Technology%' then 'TECH'
+else 'NON-TECH'
+end as TechFlag
+from stock;
