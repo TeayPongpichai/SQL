@@ -1,0 +1,4 @@
+select Sector,avg(EPS) as AvgEPSPerSector from Stock
+group by Sector
+having avg(EPS) > 10
+order by AvgEPSPerSector Desc;
